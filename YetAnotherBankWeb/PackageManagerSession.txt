@@ -1,0 +1,322 @@
+﻿Each package is licensed to you by its owner. NuGet is not responsible for, nor does it grant any licenses to, third-party packages. Some packages may include dependencies which are governed by additional licenses. Follow the package source (feed) URL to determine any dependencies.
+
+Package Manager Console Host Version 5.3.1.6268
+
+Type 'get-help NuGet' to see all available NuGet commands.
+
+PM> add-migration initialcreate -ignorechanges
+Add-Migration : A parameter cannot be found that matches parameter name 'ignorechanges'.
+At line:1 char:29
++ add-migration initialcreate -ignorechanges
++                             ~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Add-Migration], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Add-Migration
+ 
+PM> get-help add-migration
+
+NAME
+    Add-Migration
+    
+SYNOPSIS
+    Adds a new migration.
+    
+    
+SYNTAX
+    Add-Migration [-Name] <String> [-OutputDir <String>] [-Context <String>] [-Project <String>] [-StartupProject <String>] 
+    [<CommonParameters>]
+    
+    
+DESCRIPTION
+    Adds a new migration.
+    
+
+RELATED LINKS
+    Remove-Migration
+    Update-Database
+    about_EntityFrameworkCore 
+
+REMARKS
+    To see the examples, type: "get-help Add-Migration -examples".
+    For more information, type: "get-help Add-Migration -detailed".
+    For technical information, type: "get-help Add-Migration -full".
+    For online help, type: "get-help Add-Migration -online"
+
+
+PM> install-package entityframeworkcore
+install-package : Unable to find package 'entityframeworkcore'
+At line:1 char:1
++ install-package entityframeworkcore
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Install-Package], Exception
+    + FullyQualifiedErrorId : NuGetCmdletUnhandledException,NuGet.PackageManagement.PowerShellCmdlets.InstallPackageCommand
+ 
+Time Elapsed: 00:00:00.5551037
+PM> install-package entityframework
+Restoring packages for C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\YetAnotherBankWeb.csproj...
+  GET https://api.nuget.org/v3-flatcontainer/entityframework/index.json
+  OK https://api.nuget.org/v3-flatcontainer/entityframework/index.json 135ms
+  GET https://api.nuget.org/v3-flatcontainer/entityframework/6.3.0/entityframework.6.3.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/entityframework/6.3.0/entityframework.6.3.0.nupkg 43ms
+  GET https://api.nuget.org/v3-flatcontainer/system.codedom/index.json
+  GET https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/index.json
+  OK https://api.nuget.org/v3-flatcontainer/system.codedom/index.json 136ms
+  GET https://api.nuget.org/v3-flatcontainer/system.codedom/4.6.0/system.codedom.4.6.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/system.codedom/4.6.0/system.codedom.4.6.0.nupkg 42ms
+  OK https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/index.json 257ms
+  GET https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/4.6.0/system.configuration.configurationmanager.4.6.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/4.6.0/system.configuration.configurationmanager.4.6.0.nupkg 41ms
+  GET https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/index.json
+  GET https://api.nuget.org/v3-flatcontainer/system.security.permissions/index.json
+  OK https://api.nuget.org/v3-flatcontainer/system.security.permissions/index.json 129ms
+  GET https://api.nuget.org/v3-flatcontainer/system.security.permissions/4.6.0/system.security.permissions.4.6.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/system.security.permissions/4.6.0/system.security.permissions.4.6.0.nupkg 42ms
+  OK https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/index.json 186ms
+  GET https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/4.6.0/system.security.cryptography.protecteddata.4.6.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/4.6.0/system.security.cryptography.protecteddata.4.6.0.nupkg 185ms
+  GET https://api.nuget.org/v3-flatcontainer/system.windows.extensions/index.json
+  OK https://api.nuget.org/v3-flatcontainer/system.windows.extensions/index.json 161ms
+  GET https://api.nuget.org/v3-flatcontainer/system.windows.extensions/4.6.0/system.windows.extensions.4.6.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/system.windows.extensions/4.6.0/system.windows.extensions.4.6.0.nupkg 41ms
+  GET https://api.nuget.org/v3-flatcontainer/system.drawing.common/index.json
+  OK https://api.nuget.org/v3-flatcontainer/system.drawing.common/index.json 135ms
+  GET https://api.nuget.org/v3-flatcontainer/system.drawing.common/4.6.0/system.drawing.common.4.6.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/system.drawing.common/4.6.0/system.drawing.common.4.6.0.nupkg 41ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.win32.systemevents/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.win32.systemevents/index.json 140ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.win32.systemevents/4.6.0/microsoft.win32.systemevents.4.6.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.win32.systemevents/4.6.0/microsoft.win32.systemevents.4.6.0.nupkg 43ms
+Installing Microsoft.Win32.SystemEvents 4.6.0.
+Installing System.Drawing.Common 4.6.0.
+Installing System.Windows.Extensions 4.6.0.
+Installing System.Security.Permissions 4.6.0.
+Installing System.Security.Cryptography.ProtectedData 4.6.0.
+Installing System.Configuration.ConfigurationManager 4.6.0.
+Installing System.CodeDom 4.6.0.
+Installing EntityFramework 6.3.0.
+Installing NuGet package entityframework 6.3.0.
+Committing restore...
+Generating MSBuild file C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\obj\YetAnotherBankWeb.csproj.nuget.g.props.
+Generating MSBuild file C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\obj\YetAnotherBankWeb.csproj.nuget.g.targets.
+Writing assets file to disk. Path: C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\obj\project.assets.json
+Restore completed in 18.08 sec for C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\YetAnotherBankWeb.csproj.
+Successfully uninstalled 'Microsoft.NETCore.Platforms 2.0.0' from YetAnotherBankWeb
+Successfully uninstalled 'Microsoft.Win32.Registry 4.5.0' from YetAnotherBankWeb
+Successfully uninstalled 'runtime.native.System.Data.SqlClient.sni 4.4.0' from YetAnotherBankWeb
+Successfully uninstalled 'System.Configuration.ConfigurationManager 4.5.0' from YetAnotherBankWeb
+Successfully uninstalled 'System.Security.AccessControl 4.5.0' from YetAnotherBankWeb
+Successfully uninstalled 'System.Security.Cryptography.ProtectedData 4.5.0' from YetAnotherBankWeb
+Successfully uninstalled 'System.Security.Permissions 4.5.0' from YetAnotherBankWeb
+Successfully uninstalled 'System.Security.Principal.Windows 4.5.0' from YetAnotherBankWeb
+Successfully installed 'EntityFramework 6.3.0' to YetAnotherBankWeb
+Successfully installed 'Microsoft.NETCore.Platforms 3.0.0' to YetAnotherBankWeb
+Successfully installed 'Microsoft.Win32.Registry 4.6.0' to YetAnotherBankWeb
+Successfully installed 'Microsoft.Win32.SystemEvents 4.6.0' to YetAnotherBankWeb
+Successfully installed 'runtime.native.System.Data.SqlClient.sni 4.6.0' to YetAnotherBankWeb
+Successfully installed 'System.CodeDom 4.6.0' to YetAnotherBankWeb
+Successfully installed 'System.Configuration.ConfigurationManager 4.6.0' to YetAnotherBankWeb
+Successfully installed 'System.Data.SqlClient 4.7.0' to YetAnotherBankWeb
+Successfully installed 'System.Drawing.Common 4.6.0' to YetAnotherBankWeb
+Successfully installed 'System.Security.AccessControl 4.6.0' to YetAnotherBankWeb
+Successfully installed 'System.Security.Cryptography.ProtectedData 4.6.0' to YetAnotherBankWeb
+Successfully installed 'System.Security.Permissions 4.6.0' to YetAnotherBankWeb
+Successfully installed 'System.Security.Principal.Windows 4.6.0' to YetAnotherBankWeb
+Successfully installed 'System.Windows.Extensions 4.6.0' to YetAnotherBankWeb
+Executing script file 'C:\Users\wande\.nuget\packages\entityframework\6.3.0\tools\init.ps1'
+Executing nuget actions took 3.02 sec
+Time Elapsed: 00:00:21.3422043
+PM> add-migration InitialCreate -IgnoreChanges
+Both Entity Framework 6 and Entity Framework Core are installed. The Entity Framework 6 tools are running. Use 'EntityFrameworkCore\Add-Migration' for Entity Framework Core.
+No migrations configuration type was found in the assembly 'YetAnotherBankWeb'. (In Visual Studio you can use the Enable-Migrations command from Package Manager Console to add a migrations configuration).
+PM> remove-package entityframework
+remove-package : The term 'remove-package' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ remove-package entityframework
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (remove-package:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PM> uninstall-package entityframework
+Restoring packages for C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\YetAnotherBankWeb.csproj...
+Committing restore...
+Generating MSBuild file C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\obj\YetAnotherBankWeb.csproj.nuget.g.props.
+Generating MSBuild file C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\obj\YetAnotherBankWeb.csproj.nuget.g.targets.
+Writing assets file to disk. Path: C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\obj\project.assets.json
+Restore completed in 246.72 ms for C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\YetAnotherBankWeb.csproj.
+Successfully uninstalled 'EntityFramework 6.3.0' from YetAnotherBankWeb
+Successfully uninstalled 'Microsoft.NETCore.Platforms 3.0.0' from YetAnotherBankWeb
+Successfully uninstalled 'Microsoft.Win32.Registry 4.6.0' from YetAnotherBankWeb
+Successfully uninstalled 'Microsoft.Win32.SystemEvents 4.6.0' from YetAnotherBankWeb
+Successfully uninstalled 'runtime.native.System.Data.SqlClient.sni 4.6.0' from YetAnotherBankWeb
+Successfully uninstalled 'System.CodeDom 4.6.0' from YetAnotherBankWeb
+Successfully uninstalled 'System.Configuration.ConfigurationManager 4.6.0' from YetAnotherBankWeb
+Successfully uninstalled 'System.Data.SqlClient 4.7.0' from YetAnotherBankWeb
+Successfully uninstalled 'System.Drawing.Common 4.6.0' from YetAnotherBankWeb
+Successfully uninstalled 'System.Security.AccessControl 4.6.0' from YetAnotherBankWeb
+Successfully uninstalled 'System.Security.Cryptography.ProtectedData 4.6.0' from YetAnotherBankWeb
+Successfully uninstalled 'System.Security.Permissions 4.6.0' from YetAnotherBankWeb
+Successfully uninstalled 'System.Security.Principal.Windows 4.6.0' from YetAnotherBankWeb
+Successfully uninstalled 'System.Windows.Extensions 4.6.0' from YetAnotherBankWeb
+Successfully installed 'Microsoft.NETCore.Platforms 2.0.0' to YetAnotherBankWeb
+Successfully installed 'Microsoft.Win32.Registry 4.5.0' to YetAnotherBankWeb
+Successfully installed 'runtime.native.System.Data.SqlClient.sni 4.4.0' to YetAnotherBankWeb
+Successfully installed 'System.Configuration.ConfigurationManager 4.5.0' to YetAnotherBankWeb
+Successfully installed 'System.Security.AccessControl 4.5.0' to YetAnotherBankWeb
+Successfully installed 'System.Security.Cryptography.ProtectedData 4.5.0' to YetAnotherBankWeb
+Successfully installed 'System.Security.Permissions 4.5.0' to YetAnotherBankWeb
+Successfully installed 'System.Security.Principal.Windows 4.5.0' to YetAnotherBankWeb
+Executing nuget actions took 147.9 ms
+Time Elapsed: 00:00:00.6525146
+PM> add-migration InitialCreate -IgnoreChanges
+Both Entity Framework 6 and Entity Framework Core are installed. The Entity Framework 6 tools are running. Use 'EntityFrameworkCore\Add-Migration' for Entity Framework Core.
+Your target project 'YetAnotherBankWeb' doesn't reference EntityFramework. This package is required for the Entity Framework Core Tools to work. Ensure your target project is correct, install the package, and try again.
+PM> install-package microsoft.entityframeworkcore.tools
+Restoring packages for C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\YetAnotherBankWeb.csproj...
+Installing NuGet package microsoft.entityframeworkcore.tools 3.0.0.
+Committing restore...
+Assets file has not changed. Skipping assets file writing. Path: C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\obj\project.assets.json
+Restore completed in 231.28 ms for C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\YetAnotherBankWeb.csproj.
+Executing nuget actions took 70.75 ms
+Time Elapsed: 00:00:00.3542755
+PM> install-package entityframeworkcore
+install-package : Unable to find package 'entityframeworkcore'
+At line:1 char:1
++ install-package entityframeworkcore
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Install-Package], Exception
+    + FullyQualifiedErrorId : NuGetCmdletUnhandledException,NuGet.PackageManagement.PowerShellCmdlets.InstallPackageCommand
+ 
+Time Elapsed: 00:00:00.4528234
+PM> add-migration InitialCreate -IgnoreChanges
+Both Entity Framework 6 and Entity Framework Core are installed. The Entity Framework 6 tools are running. Use 'EntityFrameworkCore\Add-Migration' for Entity Framework Core.
+Your target project 'YetAnotherBankWeb' doesn't reference EntityFramework. This package is required for the Entity Framework Core Tools to work. Ensure your target project is correct, install the package, and try again.
+PM> install-package microsoft.entityframeworkcore.tools
+Restoring packages for C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\YetAnotherBankWeb.csproj...
+Installing NuGet package microsoft.entityframeworkcore.tools 3.0.0.
+Committing restore...
+Assets file has not changed. Skipping assets file writing. Path: C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\obj\project.assets.json
+Restore completed in 191.49 ms for C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\YetAnotherBankWeb.csproj.
+Executing nuget actions took 33.15 ms
+Time Elapsed: 00:00:00.2816829
+PM> install-package microsoft.entityframeworkcore.sqlserver
+Restoring packages for C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\YetAnotherBankWeb.csproj...
+Installing NuGet package microsoft.entityframeworkcore.sqlserver 3.0.0.
+Committing restore...
+Assets file has not changed. Skipping assets file writing. Path: C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\obj\project.assets.json
+Restore completed in 197.16 ms for C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\YetAnotherBankWeb.csproj.
+Executing nuget actions took 24.74 ms
+Time Elapsed: 00:00:00.2722839
+PM> install-package microsoft.entityframeworkcore
+Restoring packages for C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\YetAnotherBankWeb.csproj...
+Installing NuGet package microsoft.entityframeworkcore 3.0.0.
+Committing restore...
+Writing assets file to disk. Path: C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\obj\project.assets.json
+Restore completed in 174.13 ms for C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\YetAnotherBankWeb.csproj.
+Executing nuget actions took 902.39 ms
+Time Elapsed: 00:00:01.4907601
+PM> add-migration InitialCreate -IgnoreChanges
+Both Entity Framework 6 and Entity Framework Core are installed. The Entity Framework 6 tools are running. Use 'EntityFrameworkCore\Add-Migration' for Entity Framework Core.
+Your target project 'YetAnotherBankWeb' doesn't reference EntityFramework. This package is required for the Entity Framework Core Tools to work. Ensure your target project is correct, install the package, and try again.
+PM> install-package entityframeworkcore
+install-package : Unable to find package 'entityframeworkcore'
+At line:1 char:1
++ install-package entityframeworkcore
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Install-Package], Exception
+    + FullyQualifiedErrorId : NuGetCmdletUnhandledException,NuGet.PackageManagement.PowerShellCmdlets.InstallPackageCommand
+ 
+Time Elapsed: 00:00:00.2056374
+PM> install-package entityframework
+Restoring packages for C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\YetAnotherBankWeb.csproj...
+Installing NuGet package entityframework 6.3.0.
+Committing restore...
+Generating MSBuild file C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\obj\YetAnotherBankWeb.csproj.nuget.g.props.
+Generating MSBuild file C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\obj\YetAnotherBankWeb.csproj.nuget.g.targets.
+Writing assets file to disk. Path: C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\obj\project.assets.json
+Restore completed in 274.66 ms for C:\Users\wande\source\repos\Project1_dbf\YetAnotherBankWeb\YetAnotherBankWeb.csproj.
+Successfully uninstalled 'Microsoft.NETCore.Platforms 2.0.0' from YetAnotherBankWeb
+Successfully uninstalled 'Microsoft.Win32.Registry 4.5.0' from YetAnotherBankWeb
+Successfully uninstalled 'runtime.native.System.Data.SqlClient.sni 4.4.0' from YetAnotherBankWeb
+Successfully uninstalled 'System.Configuration.ConfigurationManager 4.5.0' from YetAnotherBankWeb
+Successfully uninstalled 'System.Security.AccessControl 4.5.0' from YetAnotherBankWeb
+Successfully uninstalled 'System.Security.Cryptography.ProtectedData 4.5.0' from YetAnotherBankWeb
+Successfully uninstalled 'System.Security.Permissions 4.5.0' from YetAnotherBankWeb
+Successfully uninstalled 'System.Security.Principal.Windows 4.5.0' from YetAnotherBankWeb
+Successfully installed 'EntityFramework 6.3.0' to YetAnotherBankWeb
+Successfully installed 'Microsoft.NETCore.Platforms 3.0.0' to YetAnotherBankWeb
+Successfully installed 'Microsoft.Win32.Registry 4.6.0' to YetAnotherBankWeb
+Successfully installed 'Microsoft.Win32.SystemEvents 4.6.0' to YetAnotherBankWeb
+Successfully installed 'runtime.native.System.Data.SqlClient.sni 4.6.0' to YetAnotherBankWeb
+Successfully installed 'System.CodeDom 4.6.0' to YetAnotherBankWeb
+Successfully installed 'System.Configuration.ConfigurationManager 4.6.0' to YetAnotherBankWeb
+Successfully installed 'System.Data.SqlClient 4.7.0' to YetAnotherBankWeb
+Successfully installed 'System.Drawing.Common 4.6.0' to YetAnotherBankWeb
+Successfully installed 'System.Security.AccessControl 4.6.0' to YetAnotherBankWeb
+Successfully installed 'System.Security.Cryptography.ProtectedData 4.6.0' to YetAnotherBankWeb
+Successfully installed 'System.Security.Permissions 4.6.0' to YetAnotherBankWeb
+Successfully installed 'System.Security.Principal.Windows 4.6.0' to YetAnotherBankWeb
+Successfully installed 'System.Windows.Extensions 4.6.0' to YetAnotherBankWeb
+Executing nuget actions took 645.72 ms
+Time Elapsed: 00:00:01.0842986
+PM> add-migration InitialCreate -Ignorechanges
+Both Entity Framework 6 and Entity Framework Core are installed. The Entity Framework 6 tools are running. Use 'EntityFrameworkCore\Add-Migration' for Entity Framework Core.
+No migrations configuration type was found in the assembly 'YetAnotherBankWeb'. (In Visual Studio you can use the Enable-Migrations command from Package Manager Console to add a migrations configuration).
+PM> Enable-Migrations
+Both Entity Framework 6 and Entity Framework Core are installed. The Entity Framework 6 tools are running. Use 'EntityFrameworkCore\Enable-Migrations' for Entity Framework Core.
+No context type was found in the assembly 'YetAnotherBankWeb'.
+PM> EntityFrameworkCore\Add-Migrations
+EntityFrameworkCore\Add-Migrations : The term 'EntityFrameworkCore\Add-Migrations' is not recognized as the name of a cmdlet, 
+function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is 
+correct and try again.
+At line:1 char:1
++ EntityFrameworkCore\Add-Migrations
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (EntityFrameworkCore\Add-Migrations:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PM> EntityFrameworkCore\Add-Migration
+cmdlet Add-Migration at command pipeline position 1
+Supply values for the following parameters:
+Name: Initial
+Both Entity Framework Core and Entity Framework 6 are installed. The Entity Framework Core tools are running. Use 'EntityFramework6\Add-Migration' for Entity Framework 6.
+Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'Project1Context' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+To undo this action, use Remove-Migration.
+PM> Remove-Migration
+Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 3.0.0 initialized 'Project1Context' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+Removing migration '20191031180107_Initial'.
+Removing model snapshot.
+Done.
+PM> EntityFrameworkCore\Add-Migration InitialCreate -IgnoreChanges
+Add-Migration : A parameter cannot be found that matches parameter name 'IgnoreChanges'.
+At line:1 char:49
++ EntityFrameworkCore\Add-Migration InitialCreate -IgnoreChanges
++                                                 ~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Add-Migration], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Add-Migration
+ 
+PM> EntityFramework\Add-Migration InitialCreate -IgnoreChanges
+EntityFramework\Add-Migration : The module 'EntityFramework' could not be loaded. For more information, run 'Import-Module 
+EntityFramework'.
+At line:1 char:1
++ EntityFramework\Add-Migration InitialCreate -IgnoreChanges
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (EntityFramework\Add-Migration:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CouldNotAutoLoadModule
+ 
+PM> 
